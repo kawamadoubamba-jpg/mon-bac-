@@ -1,0 +1,3 @@
+{
+  "functions": { "api/ia.js": { "maxDuration": 60 } }
+}

@@ -1,0 +1,8 @@
+Monbac + Tania : dossier complet pour GitHub puis Vercel
+---------------------------------------------------------
+Glisse TOUS ces fichiers à la racine de ton dépôt GitHub :
+index.html, tw.css, sw.js, manifest.webmanifest, icon-192.png, icon-512.png, vercel.json
+et le dossier api (avec ia.js dedans).
+
+Dans Vercel, crée la variable :
+GROQ_API_KEY = ta clé Groq (commence par gsk_)
