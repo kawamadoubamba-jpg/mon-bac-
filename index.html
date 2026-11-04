@@ -297,7 +297,7 @@ const SUJETS=[
 ];
 
 /* ---------- Navigation ---------- */
-const TABS=[["dash","Tableau de bord"],["cours","Cours"],["test","Test de niveau"],["carnet","Carnet"],["flash","Flashcards"],["quiz","Quiz"],["sim","Simulateur"]];
+const TABS=[["dash","Tableau de bord"],["cours","Cours"],["audio","MonBac Audio"],["test","Test de niveau"],["carnet","Carnet"],["flash","Flashcards"],["quiz","Quiz"],["sim","Simulateur"]];
 let cur="dash";
 const MAINT=['dash','cours','exc','ia'];
 const IC={dash:'🏠',cours:'📚',exc:'✏️',ia:'🤖',test:'🎯',carnet:'📓',flash:'🃏',quiz:'❓',sim:'⏱️',ann:'📄',diag:'🩺',plan:'🗓️',pap:'🪜'};
@@ -1121,5 +1121,10 @@ if(sbS())sbBoot().then(ch=>{if(!ch)return;const p=meta();if(p.serie!==SERIE||!!p
 if("serviceWorker"in navigator){addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").then(()=>navigator.serviceWorker.ready).then(()=>{if(!S.get("offmsg")){S.set("offmsg",1);pop("✅ L’appli marche maintenant hors ligne",3500)}}).catch(()=>{}))}
 addEventListener("offline",()=>pop("📴 Hors ligne : les cours restent là, mais pas Tania",3500));addEventListener("online",()=>pop("✅ Connexion revenue"));
 </script>
+  if("serviceWorker"in navigator){...}
+...
+</script>
+</body>
+</html>
 </body>
 </html>
